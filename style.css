@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:wght@100..900&display=swap');
+
+
+/* 
+ExtraBold 800
+SemiBold 600
+Medium 500
+Regular 400
+*/
+
+body {
+  margin: 0;
+  
+  font-family: "montserrat", serif;
+  color: #D9D9D9;
+
+  font-size: 20px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+  
+  background-color: #121517;
+}
+
+h1, h2 {
+  font-weight: 800;
+}
