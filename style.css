@@ -25,6 +25,10 @@ body {
   background-color: #121517;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2 {
   font-weight: 800;
   margin: 0;
@@ -102,8 +106,10 @@ a {
   max-width: 574px;
 }
 
-.container {
-
+.welcome .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title {
@@ -115,11 +121,21 @@ a {
 
 .welcome__title {
   margin-bottom: 54px;
-  }
+  position: relative;
+}
+
+.welcome__title::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+  filter: blur(175.5px);
+}
 
 .welcome__text {
   margin-bottom: 55px;
-  
 }
 
 .welcome__btns-wrapper {
@@ -175,9 +191,26 @@ a {
 }
   
 .welcome__img-wrapper {
+  padding-right: 60px;
+  position: relative;
+}
 
+.welcome__btns-wrapper::before {
+  content: "";
+  width: 860px;
+  height: 620px;
+
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  background-image: url("./images/icons/lines.svg");
+  background-size: contain;
+  background-position: center;
+  z-index: -10;
 }
 
 .welcome__img {
+  width: 468px;
 
 }
