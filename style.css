@@ -253,3 +253,58 @@ a:hover {
   width: 468px;
 }
 
+
+
+.benefits {
+
+}
+
+
+.benefits__container {
+  background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+}
+
+.benefits__item {
+  max-width: 220px;
+  text-align: center;
+}
+
+.benefits__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;  
+}
+
+.benefits__img-wrapper::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+
+  border-radius: 100%;
+  background: linear-gradient(245deg, #237249 0%);
+  box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+}
+
+.benefits__icon {
+  width: 150px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+}
+
+.benefits__title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #121517;
+}
+
+.benefits__desc {
+  line-height: 163%;
+  color: rgba(18, 21, 23, 0.9);
+}
