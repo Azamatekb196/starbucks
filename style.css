@@ -39,6 +39,10 @@ h1, h2 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   color: #D9D9D9;
   text-decoration: none;
@@ -256,15 +260,26 @@ a:hover {
 
 
 .benefits {
+  margin-top: 110px;
 
 }
 
 
 .benefits__container {
+  max-width: 1030px;
+  padding-top: 55px;
+  padding-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+  border-radius: 46px;
 }
 
 .benefits__item {
+  
   max-width: 220px;
   text-align: center;
 }
@@ -289,12 +304,31 @@ a:hover {
 }
 
 .benefits__icon {
-  width: 150px;
+  width: 146px;
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   z-index: 5;
+
+  transform: translate(-50%, -50%);
+
+}
+
+.benefits__heart {
+  top: calc(50% + 10px);
+  left: calc(50% +5 px);
+
+}
+
+.benefits__rocket {
+  width: 210px;
+  top: calc(50% + 10px);
+  left: calc(50% - 10px);
+}
+
+.benefits__money {
+  width: 211px;
 
 }
 
