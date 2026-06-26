@@ -260,7 +260,7 @@ a:hover {
 
 
 .benefits {
-  margin-top: 110px;
+  margin-top: 80px;
 
 }
 
@@ -270,12 +270,30 @@ a:hover {
   padding-top: 55px;
   padding-bottom: 25px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+position: relative;
 
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
   background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
   border-radius: 46px;
+}
+
+.benefits__container::before {
+  content: "";
+
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  z-index: -5;
+
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+  filter: blur(100px);
 }
 
 .benefits__item {
@@ -289,7 +307,9 @@ a:hover {
   justify-content: center;
   align-items: center;
 
-  position: relative;  
+  position: relative;
+
+  margin-bottom: 30px;
 }
 
 .benefits__img-wrapper::before {
@@ -336,6 +356,7 @@ a:hover {
   font-weight: 500;
   font-size: 32px;
   color: #121517;
+  margin-bottom: 25px;
 }
 
 .benefits__desc {
