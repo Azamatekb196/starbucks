@@ -512,4 +512,72 @@ position: relative;
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 37%, 27% 0%);
 }
 
-/* fill: #237249; */
+.products {
+
+}
+
+.product .container {
+
+}
+
+.products__text {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  
+}
+
+
+.products__title {
+  width: 392px;
+  height: 164px;
+}
+
+.products__desc {
+  width: 444px;
+  height: 132px;
+}
+
+.products__cards {
+
+}
+
+.card {
+
+}
+
+.card__img-wrapper {
+
+}
+
+.card__img {
+
+}
+
+.card__title {
+
+}
+
+.card__desc {
+
+}
+
+.card__row {
+
+}
+
+.card__price {
+
+}
+
+.card__size {
+
+}
+
+.btn {
+
+}
+
+.card__btn {
+
+}
