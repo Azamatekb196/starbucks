@@ -517,26 +517,28 @@ position: relative;
 
 }
 
-.product .container {
+.container {
 
 }
 
 .products__text {
-  display: flex;
-  align-items: center;
-  gap: 72px;
-  
+
 }
 
+.title {
+
+}
 
 .products__title {
-  width: 392px;
-  height: 164px;
+
+}
+
+.text-gradient {
+
 }
 
 .products__desc {
-  width: 444px;
-  height: 132px;
+
 }
 
 .products__cards {
