@@ -50,12 +50,17 @@ a {
   transition: opacity 0.3s;
 }
 
-a:hover {
+button {
+  transition: opacity 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+a:hover, button:hover {
   opacity: 0.8;
 }
 
 .container {
- 
   min-width: 1300px;
   margin: 0 auto;
   padding: 15px;
@@ -403,6 +408,7 @@ position: relative;
 
 .history {
   margin-top: 135px;
+  padding-bottom: 25px;
 }
 
 .container {
@@ -514,31 +520,42 @@ position: relative;
 }
 
 .products {
+  margin-top: 100px;
 
 }
 
-.container {
+.products .container {
 
 }
 
 .products__text {
-
-}
-
-.title {
-
+  display: flex;
+  align-items: center;
+  gap: 72px;
 }
 
 .products__title {
-
+  position: relative;
+  width: 392px;
 }
 
-.text-gradient {
+.products__title::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 40;
+  z-index: -5;
 
+  display: block;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+  filter: blur(90px);
 }
 
 .products__desc {
-
+  width: 444px;
 }
 
 .products__cards {
@@ -546,7 +563,7 @@ position: relative;
 }
 
 .card {
-
+  text-align: center;
 }
 
 .card__img-wrapper {
@@ -558,10 +575,14 @@ position: relative;
 }
 
 .card__title {
-
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 163%;
+    color: #fff;
 }
 
 .card__desc {
+
 
 }
 
@@ -570,17 +591,18 @@ position: relative;
 }
 
 .card__price {
-
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
 }
 
 .card__size {
 
 }
 
-.btn {
-
-}
-
 .card__btn {
-
+  width: 100%;
+  font-size: 17px;
+  padding: 15px 0;
+  
 }
